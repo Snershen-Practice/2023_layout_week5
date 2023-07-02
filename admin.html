@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Admin</title>
+    <script type="module" crossorigin src="/web-layout-training-vite/assets/main-6d116de9.js"></script>
+    <link rel="stylesheet" href="/web-layout-training-vite/assets/main-90d6eadc.css">
+  </head>
+
+  <body>
+    <div class="d-flex">
+      <header class="navbar navbar-expand-lg bg-light vh-100 position-sticky top-0 left-0" id="header">
+  <div class="d-flex flex-column justify-content-between py-9 h-100">
+    <nav
+      class="navbar-nav d-flex flex-column fw-bold"
+      style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48"
+    >
+      <a class="navbar-brand mb-9 ps-9" href="#">
+        <img src="/web-layout-training-vite/assets/logo-ANSWER-5336fb45.svg" alt="" />
+      </a>
+      <a class="nav-link d-flex align-items-center mb-1 ps-9 pe-10 py-2 my-4" href="#" data-nav="dashboard"
+        ><span class="material-symbols-outlined me-7"> insert_chart </span>Dashboard</a
+      >
+      <a class="nav-link d-flex align-items-center mb-1 ps-9 pe-10 py-2 my-4" href="#" data-nav="question"
+        ><span class="material-symbols-outlined me-7"> forum </span>Question</a
+      >
+      <a
+        class="nav-link d-flex align-items-center mb-1 ps-9 pe-10 py-2 my-4"
+        href="../pages/assignment.html"
+        data-nav="assignment"
+        ><span class="material-symbols-outlined me-7"> assignment </span>Assignment</a
+      >
+      <a class="nav-link d-flex align-items-center mb-1 ps-9 pe-10 py-2 my-4" href="#" data-nav="course"
+        ><span class="material-symbols-outlined me-7"> video_library </span>Course</a
+      >
+      <a
+        href="../pages/admin.html"
+        class="nav-link d-flex align-items-center mb-1 ps-9 pe-10 py-2 my-4"
+        href="#"
+        data-nav="admin"
+        ><span class="material-symbols-outlined me-7"> group </span>Admin</a
+      >
+      <a class="nav-link d-flex align-items-center ps-9 pe-10 py-2 my-4" href="#" data-nav="settings"
+        ><span class="material-symbols-outlined me-7"> settings </span>Settings</a
+      >
+    </nav>
+    <div>
+      <div class="d-flex align-items-center ps-9 pe-10">
+        <img
+          src="/web-layout-training-vite/assets/andychen-f14fef59.jpeg"
+          alt=""
+          class="rounded-circle me-6 object-fit-cover"
+          width="40px"
+          height="40px"
+        />
+        <div>
+          <p class="fw-bold">Andy Chen</p>
+          <a href="mailto:andy0401@mail.com" class="text-secondary text-decoration-none">andy0401@mail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+      <main class="px-9 pb-9 flex-grow-1">
+        <!-- section header -->
+        <div class="d-flex justify-content-between align-items-center py-9 mb-4">
+          <div class="d-flex align-items-center">
+            <h1 class="fs-1 fw-bold me-5">Admin</h1>
+            <button
+              type="button"
+              class="btn d-flex align-items-center fw-bold border-0"
+              data-bs-toggle="modal"
+              data-bs-target="#info-add"
+            >
+              <span class="material-symbols-outlined text-primary me-2"> add </span>
+              Add New Admin
+            </button>
+          </div>
+          <div class="lh-1" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48">
+            <a href="#" class="me-8"><span class="material-symbols-outlined fs-1"> search </span></a>
+            <a href="#"><span class="material-symbols-outlined fs-1"> notifications_active </span></a>
+          </div>
+        </div>
+        <div class="mb-1">
+          <table class="table" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48">
+            <thead class="border-bottom border-1 border-dark">
+              <tr>
+                <th width="10%" scope="col">
+                  ID
+                  <span class="material-symbols-outlined ms-2 text-primary align-text-bottom fs-2">
+                    arrow_downward
+                  </span>
+                </th>
+                <th width="20%" scope="col">Name</th>
+                <th width="35%" scope="col">Email</th>
+                <th width="25%" scope="col">Verified</th>
+                <th width="10%" scope="col"></th>
+              </tr>
+            </thead>
+            <tbody class="align-middle">
+              <tr data-bs-toggle="modal" data-bs-target="#info-desc">
+                <!-- Button trigger modal -->
+                <th scope="row" class="py-7">#1</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end text-nowrap">
+                  <a href="#" class="me-8"><span class="material-symbols-outlined align-middle"> visibility </span></a
+                  ><a href="#" data-bs-toggle="modal" data-bs-target="#info-edit"
+                    ><span class="material-symbols-outlined align-middle"> edit </span></a
+                  >
+                </td>
+              </tr>
+              <tr data-bs-toggle="modal" data-bs-target="#info-desc">
+                <!-- Button trigger modal -->
+                <th scope="row" class="py-7">#2</th>
+                <td>Zaina Goldsmith</td>
+                <td>zaina.goldsmith@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end text-nowrap">
+                  <a href="#" class="me-8"><span class="material-symbols-outlined align-middle"> visibility </span></a
+                  ><a href="#" data-bs-toggle="modal" data-bs-target="#info-edit"
+                    ><span class="material-symbols-outlined align-middle"> edit </span></a
+                  >
+                </td>
+              </tr>
+              <tr data-bs-toggle="modal" data-bs-target="#info-desc">
+                <!-- Button trigger modal -->
+                <th scope="row" class="py-7">#3</th>
+                <td>Mahima Lopez</td>
+                <td>mahima.lopez@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end text-nowrap">
+                  <a href="#" class="me-8"><span class="material-symbols-outlined align-middle"> visibility </span></a
+                  ><a href="#" data-bs-toggle="modal" data-bs-target="#info-edit"
+                    ><span class="material-symbols-outlined align-middle"> edit </span></a
+                  >
+                </td>
+              </tr>
+              <tr data-bs-toggle="modal" data-bs-target="#info-desc">
+                <!-- Button trigger modal -->
+                <th scope="row" class="py-7">#4</th>
+                <td>Pharrell Murray</td>
+                <td>pharrell.murray@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end text-nowrap">
+                  <a href="#" class="me-8"><span class="material-symbols-outlined align-middle"> visibility </span></a
+                  ><a href="#" data-bs-toggle="modal" data-bs-target="#info-edit"
+                    ><span class="material-symbols-outlined align-middle"> edit </span></a
+                  >
+                </td>
+              </tr>
+              <tr data-bs-toggle="modal" data-bs-target="#info-desc">
+                <!-- Button trigger modal -->
+                <th scope="row" class="py-7">#5</th>
+                <td>Annika Mcbride</td>
+                <td>annika.mcbride@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end text-nowrap">
+                  <a href="#" class="me-8"><span class="material-symbols-outlined align-middle"> visibility </span></a
+                  ><a href="#" data-bs-toggle="modal" data-bs-target="#info-edit"
+                    ><span class="material-symbols-outlined align-middle"> edit </span></a
+                  >
+                </td>
+              </tr>
+              <tr data-bs-toggle="modal" data-bs-target="#info-desc">
+                <!-- Button trigger modal -->
+                <th scope="row" class="py-7">#6</th>
+                <td>Fatimah Clark</td>
+                <td>fatimah.clark@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end text-nowrap">
+                  <a href="#" class="me-8"><span class="material-symbols-outlined align-middle"> visibility </span></a
+                  ><a href="#" data-bs-toggle="modal" data-bs-target="#info-edit"
+                    ><span class="material-symbols-outlined align-middle"> edit </span></a
+                  >
+                </td>
+              </tr>
+              <tr data-bs-toggle="modal" data-bs-target="#info-desc">
+                <!-- Button trigger modal -->
+                <th scope="row" class="py-7">#7</th>
+                <td>Klaudia Rhodes</td>
+                <td>klaudia.rhodes@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end text-nowrap">
+                  <a href="#" class="me-8"><span class="material-symbols-outlined align-middle"> visibility </span></a
+                  ><a href="#" data-bs-toggle="modal" data-bs-target="#info-edit"
+                    ><span class="material-symbols-outlined align-middle"> edit </span></a
+                  >
+                </td>
+              </tr>
+              <tr data-bs-toggle="modal" data-bs-target="#info-desc">
+                <!-- Button trigger modal -->
+                <th scope="row" class="py-7">#8</th>
+                <td>Tillie Lucero</td>
+                <td>tillie.lucero@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end text-nowrap">
+                  <a href="#" class="me-8"><span class="material-symbols-outlined align-middle"> visibility </span></a
+                  ><a href="#" data-bs-toggle="modal" data-bs-target="#info-edit"
+                    ><span class="material-symbols-outlined align-middle"> edit </span></a
+                  >
+                </td>
+              </tr>
+              <tr data-bs-toggle="modal" data-bs-target="#info-desc">
+                <!-- Button trigger modal -->
+                <th scope="row" class="py-7">#9</th>
+                <td>Sabrina Stephenson</td>
+                <td>sabrina.stephenson@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end text-nowrap">
+                  <a href="#" class="me-8"><span class="material-symbols-outlined align-middle"> visibility </span></a
+                  ><a href="#" data-bs-toggle="modal" data-bs-target="#info-edit"
+                    ><span class="material-symbols-outlined align-middle"> edit </span></a
+                  >
+                </td>
+              </tr>
+              <tr data-bs-toggle="modal" data-bs-target="#info-desc">
+                <!-- Button trigger modal -->
+                <th scope="row" class="py-7">#10</th>
+                <td>Annie Smith</td>
+                <td>annie.smith@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end text-nowrap">
+                  <a href="#" class="me-8"><span class="material-symbols-outlined align-middle"> visibility </span></a
+                  ><a href="#" data-bs-toggle="modal" data-bs-target="#info-edit"
+                    ><span class="material-symbols-outlined align-middle"> edit </span></a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+              <li class="page-item">
+                <a class="page-link u-page-link text-primary lh-1" href="#" aria-label="Previous">
+                  <span class="material-symbols-outlined"> chevron_left </span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link active" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link u-page-link text-primary lh-1" href="#" aria-label="Next">
+                  <span class="material-symbols-outlined"> navigate_next </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </main>
+    </div>
+
+    <!-- Modal - add -->
+    <div
+      class="modal fade"
+      id="info-add"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content rounded-0">
+          <div class="modal-header p-9">
+            <h2 class="modal-title fs-1 fw-bold" id="staticBackdropLabel">New Admin</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-9">
+            <div class="pt-2">
+              <h3 class="fs-5 fw-bold mb-6">Account</h3>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label mb-1">Name</label>
+                <input type="email" class="form-control border-secondary py-4" id="exampleFormControlInput1" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label mb-1">Email</label>
+                <input type="email" class="form-control border-secondary py-4" id="exampleFormControlInput1" />
+              </div>
+            </div>
+            <hr class="my-8" />
+            <div class="py-5">
+              <h3 class="fs-5 fw-bold mb-6">Verification</h3>
+              <div>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center fw-bold mb-6">
+                    <span
+                      class="material-symbols-outlined text-danger me-2"
+                      style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48"
+                    >
+                      warning </span
+                    >Unverified
+                  </div>
+                </div>
+                <button class="btn btn-outline-gray-4 text-primary w-100 py-6 fw-bold">Send Verification Mail</button>
+              </div>
+            </div>
+            <hr />
+            <div class="py-5">
+              <h3 class="fs-5 fw-bold mb-6">Access Level</h3>
+              <select class="form-select border p-6" aria-label="Default select example">
+                <option disabled selected>-Choose access level-</option>
+                <option value="Admin">Admin</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Assistant">Assistant</option>
+              </select>
+            </div>
+            <hr />
+            <div class="py-5">
+              <h3 class="fs-5 fw-bold mb-6">Custom Access</h3>
+              <div class="form-check mb-6">
+                <input class="form-check-input" type="checkbox" value="" id="Lecture" />
+                <label class="form-check-label" for="Lecture"> Lecture </label>
+              </div>
+              <div class="form-check mb-6">
+                <input class="form-check-input" type="checkbox" value="" id="Coupon" />
+                <label class="form-check-label" for="Coupon"> Coupon </label>
+              </div>
+              <div class="form-check mb-6">
+                <input class="form-check-input" type="checkbox" value="" id="Message" />
+                <label class="form-check-label" for="Message"> Message </label>
+              </div>
+              <div class="form-check mb-6">
+                <input class="form-check-input" type="checkbox" value="" id="Setting " />
+                <label class="form-check-label" for="Setting "> Setting </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="TaskMenu" />
+                <label class="form-check-label" for="TaskMenu"> Task Menu </label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary px-9 me-4" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary px-9 py-3">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal - desc -->
+    <div
+      class="modal fade"
+      id="info-desc"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-0 p-9 left-0 bottom-0 w-auto" style="min-width: 480px">
+          <!-- <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+          </div> -->
+          <div class="modal-body position-relative p-0">
+            <div class="d-flex">
+              <img src="/web-layout-training-vite/assets/emir-3d7a4b39.jpeg" alt="" class="object-fit-cover me-5" width="140px" height="140px" />
+              <div class="flex-grow-1">
+                <p class="mb-3">#1</p>
+                <p>Admin</p>
+                <h3 class="fw-bold fs-1 mb-3">Emir Wicks</h3>
+                <p class="text-secondary fs-3 mb-4">emir.wicks@mail.com</p>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item border-0">
+                    <div class="accordion-header border-0">
+                      <button
+                        class="accordion-button p-0 border-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <span class="badge text-dark fw-light bg-light">Verified</span>
+                      </button>
+                    </div>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body px-0 pb-0 pt-8 d-flex justify-content-between">
+                        <button
+                          type="button"
+                          class="btn btn-outline-danger px-9 py-3 me-4 fw-bold"
+                          data-bs-dismiss="modal"
+                        >
+                          Deactivate
+                        </button>
+                        <button type="button" class="btn btn-primary px-9 py-3 fw-bold">Edit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  class="btn-close position-absolute top-0 end-0"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal - edit -->
+    <div
+      class="modal fade"
+      id="info-edit"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content rounded-0">
+          <div class="modal-header border-bottom p-9">
+            <h2 class="modal-title fs-1 fw-bold" id="staticBackdropLabel">Edit Admin</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-9">
+            <div class="pb-5 pt-3">
+              <h3 class="fs-5 fw-bold mb-6">Account</h3>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label mb-1">Name</label>
+                <input
+                  type="email"
+                  class="form-control bg-light border-0 py-6"
+                  disabled
+                  id="exampleFormControlInput1"
+                  placeholder="Emir Wicks"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label mb-1">Email</label>
+                <input
+                  type="email"
+                  disabled
+                  class="form-control bg-light border-0 py-6"
+                  id="exampleFormControlInput1"
+                  placeholder="emir.wicks@mail.com"
+                />
+              </div>
+            </div>
+            <hr class="my-8" />
+            <div class="py-5">
+              <h3 class="fs-5 fw-bold mb-6">Verification</h3>
+              <div>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center fw-bold mb-6">
+                    <span
+                      class="material-symbols-outlined text-primary me-2"
+                      style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48"
+                    >
+                      check_circle </span
+                    >Verified
+                  </div>
+                  <date>2020/4/12</date>
+                </div>
+                <button class="btn btn-outline-secondary w-100 py-6 fw-bold" disabled="button">
+                  Send Verification Mail
+                </button>
+              </div>
+            </div>
+            <hr />
+            <div class="py-5">
+              <h3 class="fs-5 fw-bold mb-6">Access Level</h3>
+              <select class="form-select border border-dark p-4" aria-label="Default select example">
+                <option disabled>-Choose access level-</option>
+                <option selected>Admin</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Assistant">Assistant</option>
+              </select>
+            </div>
+            <hr />
+            <div class="py-5">
+              <h3 class="fs-5 fw-bold mb-6">Custom Access</h3>
+              <div class="form-check mb-6">
+                <input class="form-check-input" type="checkbox" value="" id="editLecture" />
+                <label class="form-check-label" for="editLecture"> Lecture </label>
+              </div>
+              <div class="form-check mb-6">
+                <input class="form-check-input" type="checkbox" value="" id="editCoupon" />
+                <label class="form-check-label" for="editCoupon"> Coupon </label>
+              </div>
+              <div class="form-check mb-6">
+                <input class="form-check-input" type="checkbox" value="" id="editMessage" />
+                <label class="form-check-label" for="editMessage"> Message </label>
+              </div>
+              <div class="form-check mb-6">
+                <input class="form-check-input" type="checkbox" value="" id="editSetting" />
+                <label class="form-check-label" for="editSetting"> Setting </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="editTaskMenu" />
+                <label class="form-check-label" for="editTaskMenu"> Task Menu </label>
+              </div>
+            </div>
+            <hr />
+            <div class="py-5">
+              <h3 class="fs-5 fw-bold mb-6">Deactivate Account</h3>
+              <div>
+                <div class="d-flex align-items-center mb-7 text-danger">
+                  <span
+                    class="material-symbols-outlined me-2"
+                    style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48"
+                  >
+                    warning </span
+                  >This cannot be undone!
+                </div>
+                <button class="btn btn-outline-danger w-100 py-6 fw-bold">Deactivate This Account</button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary px-9 py-3 me-4" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary px-9 py-3">Update</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
