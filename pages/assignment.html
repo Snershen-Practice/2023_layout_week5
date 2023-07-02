@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Assignment</title>
+  </head>
+
+  <body>
+    <div class="d-flex">
+      <%- include('./layout/header'); -%>
+      <main class="px-9 pb-9 flex-grow-1">
+        <!-- section-header -->
+        <div class="d-flex justify-content-between align-items-center py-9 mb-4">
+          <div class="d-flex align-items-center">
+            <h1 class="fs-1 fw-bold me-10">Assignment</h1>
+            <button
+              type="button"
+              class="btn dropdown-toggle d-flex align-items-center fw-bold p-0"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              All Courses<span class="material-symbols-outlined text-primary ms-3"> expand_more </span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">2022 Layout</a></li>
+              <li><a class="dropdown-item" href="#">2022 JavaScript</a></li>
+              <li><a class="dropdown-item" href="#">2023 Layout</a></li>
+              <li><a class="dropdown-item" href="#">2023 Vue</a></li>
+            </ul>
+          </div>
+          <div class="lh-1" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48">
+            <a href="#" class="me-8"><span class="material-symbols-outlined fs-1"> search </span></a>
+            <a href="#"><span class="material-symbols-outlined fs-1"> notifications_active </span></a>
+          </div>
+        </div>
+        <!-- //section-header -->
+        <div class="d-flex align-items-center justify-content-between mb-2">
+          <button
+            type="button"
+            class="btn dropdown-toggle d-flex align-items-center fw-bold p-0 border-0"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            All (4)<span class="material-symbols-outlined text-primary ms-2"> expand_more </span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">All</a></li>
+            <li><a class="dropdown-item" href="#">Newest</a></li>
+            <li><a class="dropdown-item" href="#">Oldest</a></li>
+          </ul>
+          <p class="fs-4 text-secondary">2 comments</p>
+        </div>
+        <div class="d-flex">
+          <section class="u-assign-list me-6">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active rounded-0 p-4" aria-current="true">
+                <div class="d-flex justify-content-between mb-1">
+                  <h3 class="fs-4">Chapter Assignment 2</h3>
+                  <small class="fs-4">4 hrs ago</small>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h2 class="fs-2 fw-bold">Please check this file…</h2>
+                  <small class="text-secondary fs-4">Emily Wang</small>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action rounded-0 p-4" aria-current="true">
+                <div class="d-flex justify-content-between mb-1">
+                  <h3 class="fs-4">Chapter Assignment 1</h3>
+                  <small class="fs-4">12 hrs ago</small>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h2 class="fs-2 fw-bold">My Homework</h2>
+                  <small class="text-secondary fs-4">David Xu</small>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action rounded-0 p-4" aria-current="true">
+                <div class="d-flex justify-content-between mb-1">
+                  <h3 class="fs-4">Final Assignment</h3>
+                  <small class="fs-4">18 hrs ago</small>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h2 class="fs-2 fw-bold">Have a problem with this…</h2>
+                  <small class="text-secondary fs-4">Tony Wei</small>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action rounded-0 p-4" aria-current="true">
+                <div class="d-flex justify-content-between mb-1">
+                  <h3 class="fs-4">Final Assignment</h3>
+                  <small class="fs-4">19 hrs ago</small>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h2 class="fs-2 fw-bold">Did I do it right?</h2>
+                  <small class="text-secondary fs-4">Christina Lin</small>
+                </div>
+              </a>
+            </div>
+          </section>
+          <section class="u-assign-single position-relative">
+            <div class="border">
+              <a
+                href="#"
+                class="list-group-item list-group-item-action active border-bottom rounded-0 px-6 py-4"
+                aria-current="true"
+              >
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <div>
+                    <h3 class="fs-4 mb-1">Chapter Assignment 2 / HTML&CSS</h3>
+                    <h2 class="fs-2 fw-bold">Please check this file for me, thanks!</h2>
+                  </div>
+                  <span class="material-symbols-outlined"> more_vert </span>
+                </div>
+              </a>
+              <div class="py-6 px-9">
+                <!-- card -->
+                <div>
+                  <div class="d-flex align-items-center mb-6">
+                    <img
+                      src="../assets/images/emilywang.jpeg"
+                      alt=""
+                      class="rounded-circle me-2 object-fit-cover"
+                      width="40px"
+                      height="40px"
+                    />
+                    <div>
+                      <p class="fw-bold">Emily Wang</p>
+                      <a href="#" class="text-secondary text-decoration-none fs-4">10:38 AM (4 hours ago)</a>
+                    </div>
+                  </div>
+                  <div class="ms-10">
+                    <p class="fs-3 mb-4">
+                      Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the
+                      following code the height of the <code>div</code> is bigger than the height of the
+                      <code>img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.
+                      What is the gap or extra space below image?
+                    </p>
+                    <button class="btn btn-light fw-bold d-flex align-item-center border px-4 py-3">
+                      <span class="material-symbols-outlined me-3"> attach_file </span>HW-2-David.zip
+                    </button>
+                  </div>
+                </div>
+                <hr class="ms-10" />
+                <!-- card -->
+                <div>
+                  <div class="d-flex align-items-center justify-content-between mb-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="../assets/images/andychen.jpeg"
+                        alt=""
+                        class="rounded-circle me-2 object-fit-cover"
+                        width="40px"
+                        height="40px"
+                      />
+                      <div>
+                        <p class="fw-bold">Andy Chen (You)</p>
+                        <a href="#" class="text-secondary text-decoration-none fs-4">13:24 AM (1 hours ago)</a>
+                      </div>
+                    </div>
+                    <div>
+                      <a href="#" class="me-8"
+                        ><span
+                          class="material-symbols-outlined"
+                          style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48"
+                        >
+                          star
+                        </span></a
+                      >
+                      <a href="#"
+                        ><span
+                          class="material-symbols-outlined"
+                          style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48"
+                        >
+                          edit
+                        </span></a
+                      >
+                    </div>
+                  </div>
+                  <div class="ms-10">
+                    <p class="fs-3 mb-2">
+                      Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that
+                      a, b, c and d sit on. There is space below that line for the descenders you find on letters like
+                      g, j, p and q.<br /><br />
+                      You can:<br /><br />
+                      　• adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the
+                      <code>middle</code> ) or<br />
+                      　• change the <code>display</code> so it isn’t inline.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-6 px-2">
+              <div>
+                <a href="#" class="me-8 lh-1"><span class="material-symbols-outlined fs-2"> arrow_back_ios </span></a>
+                <a href="#"><span class="material-symbols-outlined fs-2"> arrow_forward_ios </span></a>
+              </div>
+              <div>
+                <a href="#" class="btn btn-outline-primary px-9 py-3 me-6 fw-bold">Mark as read</a>
+                <button
+                  class="btn btn-primary px-9 py-3 fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  Reply
+                </button>
+                <div class="collapse position-absolute bottom-0 start-0 w-100" id="collapseExample">
+                  <div class="card card-body p-0">
+                    <div class="bg-light border-top border-bottom px-8 py-7 fw-bold">
+                      <div class="d-flex align-items-center">
+                        <div class="me-8">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle d-flex align-items-center fw-bold p-0 border-0"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Body Text<span class="material-symbols-outlined ms-3"> arrow_drop_down </span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Heading</a></li>
+                            <li><a class="dropdown-item" href="#">Body Text</a></li>
+                            <li><a class="dropdown-item" href="#">Quote</a></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="me-8 lh-1"><span class="material-symbols-outlined"> format_bold </span></a>
+                        <a href="#" class="me-8 lh-1">
+                          <span class="material-symbols-outlined"> format_italic </span>
+                        </a>
+                        <a href="#" class="me-8 lh-1">
+                          <span class="material-symbols-outlined"> format_list_bulleted </span>
+                        </a>
+                        <a href="#" class="me-8 lh-1">
+                          <span class="material-symbols-outlined"> format_list_numbered </span>
+                        </a>
+                        <a href="#" class="me-8 lh-1">
+                          <span class="material-symbols-outlined"> image </span>
+                        </a>
+                        <a href="#" class="me-8 lh-1">
+                          <span class="material-symbols-outlined"> link </span>
+                        </a>
+                        <a href="#" class="me-8 lh-1">
+                          <span class="material-symbols-outlined"> code </span>
+                        </a>
+                      </div>
+                    </div>
+                    <textarea
+                      class="form-control border-0 px-5 py-4"
+                      id="exampleFormControlTextarea1"
+                      rows="8"
+                      placeholder="Reply an answer…"
+                      style="resize: none"
+                    ></textarea>
+                    <div class="d-flex justify-content-end pb-5 pe-4">
+                      <button
+                        class="btn btn-outline-primary px-9 py-3 me-3"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        class="btn btn-primary px-9 py-3"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        Reply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.nav-link {
+  color: $dark;
+  position: relative;
+  &:hover:not(&-active) {
+    background: $gray-400;
+  }
+  &-active {
+    color: $primary;
+    &:hover {
+      color: $primary;
+    }
+    &::before {
+      content: "";
+      background: $primary;
+      position: absolute;
+      left: 0;
+      width: 4px;
+      height: 100%;
+    }
+  }
+}

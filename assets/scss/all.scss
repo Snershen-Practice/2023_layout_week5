@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap");
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./utils/variables"; //自定義
+@import "../../node_modules/bootstrap";
+@import "./utils/utilities"; //自定義
+@import "../../node_modules/bootstrap/scss/utilities/api"; //如要修改 BS 的 utils，最後一定要引入
+
+@import "./base/base";
+@import "./component/button";
+@import "./component/card";
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+@import "./pages/index.scss";
+@import "./pages/admin.scss";

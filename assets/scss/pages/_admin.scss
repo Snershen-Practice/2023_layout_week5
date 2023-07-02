@@ -1,0 +1,41 @@
+.table {
+  margin-bottom: 68px;
+  tbody tr {
+    &:hover {
+      background: $gray-100;
+    }
+  }
+}
+
+.u-page-link {
+  padding: 5px;
+}
+
+.page-link {
+  border: $primary solid 1px;
+  &:hover {
+    border: $primary solid 1px;
+  }
+  &.active {
+    background: $primary;
+    color: $white;
+    border: $primary solid 1px;
+  }
+}
+
+.form-check {
+  &-input {
+    border: 1px solid $black;
+    &:checked {
+      border: 1px solid $black;
+    }
+  }
+}
+
+.modal-dialog-scrollable .modal-content {
+  height: 80vh;
+}
+
+.accordion {
+  --bs-accordion-border-width: 0px;
+}
